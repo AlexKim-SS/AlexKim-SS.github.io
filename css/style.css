@@ -10,13 +10,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
     color: white;
-    position: relative;
     overflow: hidden;
 }
 
@@ -35,6 +29,17 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+.fullContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
 
 /* Content Box */
 .mainContainer{
