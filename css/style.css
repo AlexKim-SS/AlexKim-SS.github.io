@@ -67,6 +67,13 @@ body {
     justify-content: center;
 }
 
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #clock {
     font-size: 5rem;
     font-weight: 600;
