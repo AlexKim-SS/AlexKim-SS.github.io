@@ -33,7 +33,7 @@ function showGreeting() {
         greeting.classList.remove(HIDDEN_CLASSNAME);
         clockView.classList.remove(HIDDEN_CLASSNAME);
         todoView.classList.remove(HIDDEN_CLASSNAME);
-        //todoView.classList.add(TODOVIEW_CLASSNAME);
+        todoView.classList.add(TODOVIEW_CLASSNAME);
     }
 }
 
