@@ -12,6 +12,9 @@ body {
     height: 100vh;
     color: white;
     overflow: hidden;
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 /* Background Image */
