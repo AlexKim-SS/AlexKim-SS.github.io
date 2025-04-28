@@ -8,9 +8,11 @@ const todoView = document.querySelector("#todos");
 
 const resetBtn = document.querySelector("#resetBtn");
 
-const HIDDEN_CLASSNAME = "hidden"
+const HIDDEN_CLASSNAME = "hidden";
+const TODOVIEW_CLASSNAME = "todoContainer";
 const USERNAME_KEY = "username";
-const TODO_KEY = "vanilaTodo"
+const TODO_KEY = "vanilaTodo";
+
 
 function showGreeting() {
     const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -21,6 +23,7 @@ function showGreeting() {
         greeting.classList.add(HIDDEN_CLASSNAME);
         clockView.classList.add(HIDDEN_CLASSNAME);
         todoView.classList.add(HIDDEN_CLASSNAME);
+        todoView.classList.remove(TODOVIEW_CLASSNAME);
     }
     else {
         loginComment.classList.add(HIDDEN_CLASSNAME);
@@ -30,6 +33,7 @@ function showGreeting() {
         greeting.classList.remove(HIDDEN_CLASSNAME);
         clockView.classList.remove(HIDDEN_CLASSNAME);
         todoView.classList.remove(HIDDEN_CLASSNAME);
+        todoView.classList.add(TODOVIEW_CLASSNAME);
     }
 }
 
